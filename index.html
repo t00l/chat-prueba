@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Prueba</title>
+	<link rel="stylesheet" href="css/media.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+
+<div class="container">
+<header><h1>Chats</h1></header>
+	<main>
+			<section class="enviando">
+				<form>
+			  	<div class="form-group">
+							<input id="mensaje" class="form-control" type="text" placeholder="Enviar mensaje" >
+				</form>
+							<button onclick="Chat.enviar(event)" type="button" class="btn btn-primary" id="enviar">Enviar</button>
+							<button onclick="Chat.cancelar(event)" type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
+					</div>
+			</section>
+						<div class="container">
+							<section id="cuadro">		
+
+
+							</section>
+						</div>
+</div>
+			<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+			<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			<script src="js/chat.js" type="text/javascript"></script>
+	</main>
+</body>
+</html>

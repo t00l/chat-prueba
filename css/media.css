@@ -1,0 +1,11 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after { /*before y after son pseudoelementos*/
+	box-sizing: inherit;
+}
+
+.container{
+	background: grey;
+}
