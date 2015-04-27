@@ -8,34 +8,37 @@ html {
 
 
 
-header{
-	background: #C9C3C1;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	border-style: solid;
-    border-color: black;
+header {
+  background: #C9C3C1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  width: 100%;
 }
-
 .container{
 	position: relative;
-	width: 100%;
+	width: 960px;
 	height: 100%;
+	padding-top: 10px;
 }
-
-
-#cuadro{
-	position: absolute;
-	border-style: solid;
-    border-color: black;
-    height: 480px;
-    width: 1140px;
-    text-align: left;
-    padding-left: 10px;
-
+main{
+    position: relative;
+      height: 587px;
+}
+#cuadro {
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  height: 480px;
+  width: 100%;
+  text-align: left;
+  overflow: scroll;
+  padding-left: 10px;
 }
 .enviando {
-	position: absolute;
-	top: 630%;
-	width: 1140px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
 }

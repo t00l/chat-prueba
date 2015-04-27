@@ -32,6 +32,9 @@ Chat.mostrar = function(){
 		   + '</h3></p>' + '</article>';
 	});	
 	document.getElementById('cuadro').innerHTML = cuadro;
+    
+    // var objDiv = document.getElementById('cuadro');
+    // objDiv.scrollTop = objDiv.scrollHeight;
 };
 
 Chat.guardar = function(){
@@ -41,12 +44,10 @@ Chat.guardar = function(){
 }
 
 Chat.obtenerMensaje = function(){
-	if (mensajesEncode == null) {
-	var mensajesEncode = localStorage.getItem('mensajes');
-	var mensajes = JSON.parse(mensajesEncode);
-	Chat.mensajes = mensajes;}else{
-		console.log("Nulo!");
-	}
+	if (mensajesEncode != null) {
+		var mensajesEncode = localStorage.getItem('mensajes');
+		var mensajes = JSON.parse(mensajesEncode);
+		Chat.mensajes = mensajes;}
 };
 
 Chat.obtenerMensaje();
