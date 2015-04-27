@@ -41,7 +41,7 @@ Chat.guardar = function(){
 }
 
 Chat.obtenerMensaje = function(){
-	if (mensajesEncode != null) {
+	if (mensajesEncode == null) {
 	var mensajesEncode = localStorage.getItem('mensajes');
 	var mensajes = JSON.parse(mensajesEncode);
 	Chat.mensajes = mensajes;}else{

@@ -15,23 +15,22 @@
 <body>
 
 <div class="container">
-<header><h1>Chats</h1></header>
+
+<header><h1> Chats</h1></header>
 	<main>
-			<section class="enviando">
-				<form>
-			  	<div class="form-group">
-							<input id="mensaje" class="form-control" type="text" placeholder="Enviar mensaje" >
-				</form>
-							<button onclick="Chat.enviar(event)" type="button" class="btn btn-primary" id="enviar">Enviar</button>
-							<button onclick="Chat.cancelar(event)" type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
-					</div>
+			<section id="cuadro">		
+
+
 			</section>
-						<div class="container">
-							<section id="cuadro">		
-
-
-							</section>
-						</div>
+		<section class="enviando">
+			<form>
+		  	<div class="form-group">
+		  		<input id="mensaje" class="form-control" type="text" placeholder="Enviar mensaje" >
+					<button onclick="Chat.enviar(event)" type="button" class="btn btn-primary" id="enviar">Enviar</button>
+					<button onclick="Chat.cancelar(event)" type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
+					</div>
+			</form>					
+		</section>
 </div>
 			<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 			<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
